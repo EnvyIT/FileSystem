@@ -1,0 +1,9 @@
+StringNode.o: StringNode.cpp StringNode.h Node.h
+Tree.o: Tree.cpp Tree.h Node.h StringNode.h
+FileSystem.o: FileSystem.cpp FileSystem.h Tree.h Node.h Directory.h \
+ FSNode.h File.h
+File.o: File.cpp File.h FSNode.h Node.h
+Directory.o: Directory.cpp Directory.h FSNode.h Node.h
+FSNode.o: FSNode.cpp FSNode.h Node.h
+Node.o: Node.cpp Node.h
+main.o: main.cpp Tree.h Node.h StringNode.h FileSystem.h
